@@ -1,0 +1,1 @@
+<?php // Silece is golden.

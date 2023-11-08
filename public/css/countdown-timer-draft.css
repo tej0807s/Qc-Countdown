@@ -1,0 +1,158 @@
+.draft.draft__theme-dark {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.draft.draft__theme-dark .rotor-group-heading:before {
+  color: #000;
+}
+/* .draft.draft__theme-dark .rotor-group:nth-child(n + 2):nth-child(-n + 3):before,
+.draft.draft__theme-dark .rotor-group:nth-child(n + 2):nth-child(-n + 3):after {
+  background-color: #fff;
+} */
+.draft.draft__theme-dark .rotor,
+.draft.draft__theme-dark .rotor-top,
+.draft.draft__theme-dark .rotor-leaf-front {
+  color: #ea4c4c;
+  background-color: #fff;
+  border: 1px solid lightgrey;
+  border-bottom: none;
+}
+.draft.draft__theme-dark .rotor-bottom,
+.draft.draft__theme-dark .rotor-leaf-rear {
+  color: #ea4c4c;
+  background-color: #fff;
+  border: 1px solid lightgrey;
+  border-top: none;
+}
+.draft.draft__theme-dark .rotor:after {
+  border-top: solid 1px #fff;
+}
+.draft {
+  overflow: visible;
+  width: 600px;
+  height: 110px;
+}
+.draft .rotor-group {
+  position: relative;
+  float: left;
+  padding-right: 20px;
+}
+.draft .rotor-group:last-child {
+  padding-right: 0;
+}
+.draft .rotor-group-heading:before {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.draft .rotor-group:nth-child(1) .rotor-group-heading:before {
+  content: attr(data-before);
+}
+.draft .rotor-group:nth-child(2) .rotor-group-heading:before {
+  content: attr(data-before);
+}
+.draft .rotor-group:nth-child(3) .rotor-group-heading:before {
+  content: attr(data-before);
+}
+.draft .rotor-group:nth-child(4) .rotor-group-heading:before {
+  content: attr(data-before);
+}
+.draft .rotor-group:nth-child(n + 2):nth-child(-n + 3):before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 115px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.draft .rotor-group:nth-child(n + 2):nth-child(-n + 3):after {
+  content: "";
+  position: absolute;
+  bottom: 50px;
+  left: 115px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.draft .rotor {
+  position: relative;
+  float: left;
+  width: 70px;
+  height: 80px;
+  margin: 0px 5px 0px 0px;
+  border-radius: 4px;
+  font-size: 4rem;
+  text-align: center;
+  perspective: 200px;
+}
+.draft .rotor:last-child {
+  margin-right: 0;
+}
+.draft .rotor-top,
+.draft .rotor-bottom {
+  overflow: hidden;
+  position: absolute;
+  width: 70px;
+  height: 40px;
+}
+.draft .rotor-leaf {
+  z-index: 1;
+  position: absolute;
+  width: 70px;
+  height: 80px;
+  transform-style: preserve-3d;
+  transition: transform 0s;
+}
+.draft .rotor-leaf.flipped {
+  transform: rotateX(-180deg);
+  transition: all 0.5s ease-in-out;
+}
+.draft .rotor-leaf-front,
+.draft .rotor-leaf-rear {
+  overflow: hidden;
+  position: absolute;
+  width: 70px;
+  height: 40px;
+  margin: 0;
+  transform: rotateX(0deg);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.draft .rotor-leaf-front {
+  line-height: 80px;
+  border-radius: 4px 4px 0px 0px;
+}
+.draft .rotor-leaf-rear {
+  line-height: 0px;
+  border-radius: 0px 0px 4px 4px;
+  transform: rotateX(-180deg);
+}
+.draft .rotor-top {
+  line-height: 80px;
+  border-radius: 4px 4px 0px 0px;
+}
+.draft .rotor-bottom {
+  bottom: 0;
+  line-height: 0px;
+  border-radius: 0px 0px 4px 4px;
+}
+.draft .rotor:after {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100px;
+  height: 40px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.draft_sale_title {
+  color: #000;
+  font: 200 2.25em "Lato";
+  font-weight: light;
+  text-align: left;
+  padding-bottom: 10px;
+}

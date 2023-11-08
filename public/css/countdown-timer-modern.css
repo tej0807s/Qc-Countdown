@@ -1,0 +1,28 @@
+.clock-item .inner {
+  position: relative;
+  width: 100%;
+}
+
+.time_number {
+  /* Countdown numbers */
+  color: #000;
+  position: absolute;
+  font-size: 2em;
+  font-weight: bold;
+  top: 20%;
+  text-align: center;
+  width: 100%;
+}
+
+.time_name {
+  /* Day,hour,Min Etc */
+  font-size: 14px;
+}
+
+.modern_sale_title {
+  color: #000;
+  font: 200 2.25em "Lato";
+  font-weight: light;
+  text-align: left;
+  padding-bottom: 10px;
+}
